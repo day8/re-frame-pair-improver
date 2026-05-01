@@ -15,7 +15,7 @@ Deliver:
 - what the user was trying to do
 - where the workflow dragged, confused, or frustrated them
 - which problems were one-off environment issues vs recurring product gaps
-- 2-5 concrete improvement ideas, prioritized by leverage
+- 2-5 concrete improvement ideas, prioritized by leverage, including 1-2 bolder options when they would materially improve the workflow
 - an opt-in issue draft or filed issue only after explicit user approval
 
 ## Guard rails
@@ -38,6 +38,11 @@ Deliver:
   - What required too much expert knowledge?
   - What capability existed but was undiscoverable?
   - What should have been the default?
+- Be creatively ambitious after the diagnosis is clear.
+  - Start with grounded fixes supported directly by the session.
+  - Then ask what would make this workflow feel nearly automatic, self-explaining, or hard to misuse.
+  - Include 1-2 higher-upside ideas when warranted, even if they require reshaping the workflow rather than patching a local symptom.
+  - Label speculative ideas clearly; creative does not mean vague.
 - Stay focused on improving `re-frame-pair`. If the best fix belongs upstream in `re-frame`, `re-frame-10x`, `re-com`, or `shadow-cljs`, say so explicitly instead of forcing the proposal into the wrong repo.
 - Read [references/analysis-lenses.md](references/analysis-lenses.md) when the session has multiple plausible causes or you need a sharper taxonomy.
 - Read [references/known-frictions.md](references/known-frictions.md) when the session resembles a recurring class of `re-frame-pair` pain and you want to sanity-check whether it is a one-off or a pattern.
@@ -90,12 +95,18 @@ Deliver:
      - expose new runtime instrumentation
      - file an upstream issue when the right fix is outside `re-frame-pair`
    - Prefer proposals that remove repeated effort, not just this session's exact symptom.
+   - Ask a broader design question before finalizing ideas:
+     - what should the tool have noticed automatically?
+     - what manual decision or reconstruction step should disappear?
+     - what would make this workflow feel obvious to a first-time user?
+     - what would prevent this class of failure earlier?
    - Offer options when there is more than one credible path:
      - no action
      - docs or skill edit
      - tool/runtime change
      - issue draft
      - upstream escalation
+   - If the workflow itself seems wrong, include a redesign option instead of only polishing the current path.
 
 6. Prioritize.
    - Favor ideas that are:
@@ -104,6 +115,7 @@ Deliver:
      - supported by session evidence
      - likely to improve trust, speed, or debuggability
    - Usually return 2-5 improvements, not a long brainstorm.
+   - A good default mix is 1-3 grounded improvements plus 0-2 bolder ideas.
 
 ## Output format
 
@@ -112,6 +124,7 @@ Use a compact retrospective with these sections when the session has enough evid
 - `Observed friction`
 - `Likely root causes`
 - `Improvement ideas`
+- `Bolder ideas` if there are credible higher-upside options worth separating from the grounded fixes
 - `Issue candidates` if the user wants them
 - `Other possibilities` if there were good lower-priority ideas
 
@@ -147,6 +160,7 @@ If direct filing is not possible, produce a ready-to-paste issue body and say th
 - Do not reduce every problem to "write more docs". Consider product behavior, tooling, defaults, and instrumentation first.
 - Do not confuse a transient local outage with a product gap unless the workflow made recovery harder than it should have.
 - Do not propose vague improvements like "better UX" without naming the concrete missing behavior.
+- Do not confuse creativity with hand-waving. Bold ideas still need a concrete change and a believable path to value.
 - Do not force every retro into a code contribution or issue.
 - Do not file speculative issues unsupported by the session.
 - Do not pressure the user to file anything.

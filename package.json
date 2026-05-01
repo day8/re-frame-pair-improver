@@ -1,6 +1,6 @@
 {
-  "name": "re-frame-pair-improver",
-  "version": "0.1.0-alpha.1",
+  "name": "@day8/re-frame-pair-improver",
+  "version": "0.1.0-beta.1",
   "description": "Analyze re-frame-pair sessions for friction and propose concrete product improvements.",
   "keywords": [
     "claude-code",
@@ -10,7 +10,16 @@
     "workflow-analysis",
     "product-feedback"
   ],
+  "homepage": "https://github.com/day8/re-frame-pair-improver",
+  "bugs": {
+    "url": "https://github.com/day8/re-frame-pair-improver/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/day8/re-frame-pair-improver.git"
+  },
   "license": "MIT",
+  "author": "day8 (https://github.com/day8)",
   "files": [
     "SKILL.md",
     "README.md",
@@ -19,6 +28,9 @@
     "references/",
     ".claude-plugin/"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
     "node": ">=18"
   }

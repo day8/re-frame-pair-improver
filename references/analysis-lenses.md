@@ -50,6 +50,15 @@ Prefer proposals that remove repeated effort:
 - add a fixture or regression test for the observed failure mode
 - add an upstream issue when the repo is working around the wrong abstraction boundary
 
+Also consider higher-upside redesigns:
+
+- collapse a multi-step troubleshooting loop into one guided operation
+- make the tool detect and explain the problem before the user asks
+- remove an expert-only decision by choosing or validating the safe default automatically
+- turn a late failure into an early warning or preflight check
+- add instrumentation that makes the next debugging step obvious instead of manual
+- rethink the interaction shape if the current command flow is fighting the user's mental model
+
 ## Prioritization
 
 Prioritize improvements that score well on most of these:
@@ -61,3 +70,4 @@ Prioritize improvements that score well on most of these:
 - local-first: can be fixed in `re-frame-pair` without waiting on upstream
 
 If many ideas surface, return the top 2-5 and demote the rest to "other possibilities".
+Include 0-2 bolder ideas when they are concrete, high-leverage, and clearly labeled as redesigns or speculative bets.
