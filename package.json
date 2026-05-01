@@ -1,0 +1,25 @@
+{
+  "name": "re-frame-pair-improver",
+  "version": "0.1.0-alpha.1",
+  "description": "Analyze re-frame-pair sessions for friction and propose concrete product improvements.",
+  "keywords": [
+    "claude-code",
+    "claude-code-skill",
+    "re-frame-pair",
+    "retrospective",
+    "workflow-analysis",
+    "product-feedback"
+  ],
+  "license": "MIT",
+  "files": [
+    "SKILL.md",
+    "README.md",
+    "LICENSE",
+    "agents/",
+    "references/",
+    ".claude-plugin/"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}

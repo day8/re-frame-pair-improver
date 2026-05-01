@@ -1,0 +1,9 @@
+{
+  "name": "re-frame-pair-improver",
+  "version": "0.1.0-alpha.1",
+  "description": "Review a re-frame-pair session, identify workflow friction, and propose improvements or issue drafts.",
+  "skills": [
+    "./SKILL.md"
+  ],
+  "status": "pre-alpha"
+}
