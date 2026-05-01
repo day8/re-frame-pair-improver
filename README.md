@@ -1,6 +1,6 @@
 # re-frame-pair-improver
 
-`re-frame-pair-improver` is a Claude skill that reviews a user's session with [`re-frame-pair`](https://github.com/day8/re-frame-pair) and turns their experience into concrete improvement proposals.
+`re-frame-pair-improver` is a Claude ***meta-skill*** for [`re-frame-pair`](https://github.com/day8/re-frame-pair). It reviews a user's `re-frame-pair` session, identifies friction and wasted effort, and suggests how `re-frame-pair` itself could be improved to become a better pair programmer.
 
 It is designed for retrospectives like:
 
@@ -9,9 +9,9 @@ It is designed for retrospectives like:
 - "Which parts of this workflow should re-frame-pair absorb?"
 - "Can you draft or file an issue for the best improvement idea?"
 
-The skill focuses on evidence from the session itself: retries, confusion, workarounds, stale or empty results, missing observability, brittle platform behavior, hidden prerequisites, and trust gaps. It then proposes improvements at the right layer: `SKILL.md`, scripts/runtime ops, warnings/results, tests/fixtures, or upstream library issues.
+It focuses on evidence from the session itself: retries, confusion, workarounds, stale or empty results, missing observability, brittle platform behavior, hidden prerequisites, and trust gaps. It then proposes improvements at the right layer: `SKILL.md`, scripts/runtime ops, warnings/results, tests/fixtures, or upstream library issues.
 
-It never files an issue without explicit user approval.
+It can draft a GitHub issue, but only if the user wants that.
 
 It is intentionally diagnosis-first: the default outcome is a better understanding of what went wrong and which improvements would matter most, not pressure to contribute code or file issues.
 
